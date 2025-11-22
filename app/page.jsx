@@ -14,7 +14,7 @@ import c2 from '../Assets/c2.jpeg';
 import c3 from '../Assets/c3.jpeg';
 
 export default function Home() {
-  const images = [c2, c1, c3];
+  const images = [c2, c1];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
