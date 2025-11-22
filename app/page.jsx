@@ -20,7 +20,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((i) => (i + 1) % images.length);
-    }, 10000);
+    }, 20000);
     return () => clearInterval(timer);
   }, []);
 
@@ -124,7 +124,7 @@ export default function Home() {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 text-rose-700 font-medium tracking-widest text-sm sm:text-base z-30 whitespace-nowrap"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
-        Aap sabka swagat hai
+        Is khaas din ko aur khaas banane ke liye aapka aana bohot zaroori hai.
       </motion.p>
 
       {/* Corner Lottie - Mobile pe size perfect */}
