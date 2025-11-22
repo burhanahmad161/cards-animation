@@ -108,10 +108,10 @@ export default function Home() {
           <button
             key={i}
             onClick={() => setCurrentIndex(i)}
-            className={`transition-all ${i === currentIndex 
-              ? 'w-10 sm:w-12 h-3 bg-rose-600 rounded-full shadow-lg' 
+            className={`transition-all ${i === currentIndex
+              ? 'w-10 sm:w-12 h-3 bg-rose-600 rounded-full shadow-lg'
               : 'w-3 h-3 bg-white/80 rounded-full hover:bg-white/90'
-            }`}
+              }`}
           />
         ))}
       </div>
@@ -121,7 +121,16 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-rose-700 font-medium tracking-widest text-sm sm:text-base z-30 whitespace-nowrap"
+        className="
+    absolute bottom-6 sm:bottom-8 lg:bottom-10 
+    left-1/2 -translate-x-1/2 
+    w-full max-w-md px-6 
+    text-center 
+    text-rose-700 font-medium tracking-wider 
+    text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl 
+    leading-relaxed 
+    z-30
+  "
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
         Is khaas din ko aur khaas banane ke liye aapka aana bohot zaroori hai.
